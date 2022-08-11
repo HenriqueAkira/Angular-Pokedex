@@ -1,0 +1,16 @@
+body{
+    width: 100vw;
+    display: flex;
+}
+
+.pokemonCard{
+    padding: 1em;
+}
+
+.wrapper{
+    padding: 50px;
+    margin: 0;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}

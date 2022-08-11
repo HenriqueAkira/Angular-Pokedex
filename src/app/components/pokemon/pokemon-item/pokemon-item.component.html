@@ -1,0 +1,23 @@
+
+<div class="card">
+    
+    <div class="pokemonInfo">
+        <p>{{pokemon.name}}</p>
+    </div>
+    <p class="pokemon-id ">{{pokemon.id}}</p>
+    <div class="pokemon-image">
+        <img [src]="pokemon.sprite" class="img-crop"/>
+        <ng-container *ngFor="let type of pokemon.types" >
+            <li style="list-style: none;" class="">
+                <div class="icon" [ngClass]="switchClass(type)"> 
+                    <img [src]="type">
+                </div>
+            </li>
+        </ng-container>
+    </div>
+    
+    
+
+</div>
+
+<!-- <img [src]="pokemon.gif" width="150" /> -->
